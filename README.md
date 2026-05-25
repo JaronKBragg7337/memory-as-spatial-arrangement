@@ -3,7 +3,7 @@
 ### A working hypothesis and its origin
 
 **Author:** Jaron K. Bragg
-**Status:** Private. In progress. A starting point, not a finished idea.
+**Status:** Shared openly as a working draft. In progress — a starting point, not a finished idea.
 **Date started:** May 2026
 
 -----
@@ -120,7 +120,7 @@ If none of these can be answered favorably, the right move is to let the idea go
 
 ## 8. Status and caution to myself
 
-- This is **private** and **in progress.** It’s a seed, written down so it stops living only in my head and one fragile conversation.
+- This is **shared openly as a working draft** and **in progress.** It’s a seed, put in the open so it stops living only in my head and one fragile conversation — and so people who know more than I do can find it, take what’s useful, or tell me where it’s wrong.
 - I am **not claiming** I’ve discovered a new memory architecture. I noticed a connection between real pieces other people made, and I think it’s worth chasing. That’s all this is at this stage.
 - **Caution I’m setting for myself:** do not let this slide into mysticism or “the universe is a cellular automaton” territory. The person whose work sparked Piece A wraps it in that framing; I deliberately don’t. Keep this as a neutral engineering and math question — *can arrangement be a better substrate for memory* — and nothing more, until evidence says otherwise.
 - **The demotion caution (see Section 2):** the new math is the easiest thing to lose and the most important thing to keep. Watch for any version of “that’s already known” creeping in. The reaching is old; the math is new; the application is unbuilt.
@@ -129,3 +129,13 @@ If none of these can be answered favorably, the right move is to let the idea go
 -----
 
 *End of current draft. To be expanded as understanding grows.*
+
+-----
+
+## A note on how this was written
+
+I want to be transparent about this, because in a moment where people reasonably want to know what’s human and what’s AI, I think honesty about it matters.
+
+The thinking here is mine — the connection between the cellular automata, the new packing math, and how memory might be arranged; the provenance; the decisions about what I’m claiming and what I’m not. But I had AI help structuring and wording the document itself. I’ll be blunt about why: I struggle to unwrap my own thoughts into clear writing sometimes, and wording is not my strong suit. The ideas come to me by collision and they don’t arrive in order, so I used AI as a tool to lay them out straight and catch places where my wording would have said something I didn’t mean.
+
+So: human thinking, AI-assisted structure and wording. I’d rather say that plainly than let anyone guess in either direction — that it’s all mine when the writing had help, or that it’s “AI-generated” when the actual idea isn’t.
