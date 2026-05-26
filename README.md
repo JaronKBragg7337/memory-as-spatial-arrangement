@@ -6,7 +6,9 @@
 **Status:** Shared openly as a working draft. In progress — a starting point, not a finished idea.
 **Date started:** May 2026
 
-Companion document: https://github.com/JaronKBragg7337/emergence-structure-that-grows — the emergence principle that Section 2b draws on.
+Companion document: <https://github.com/JaronKBragg7337/emergence-structure-that-grows> — the emergence principle that Section 2b draws on.
+
+First test results and runnable code: see METHODOLOGY.md, RESULTS.md, and the simulation files in this repository. Section 7a below summarizes what has now been tested.
 
 -----
 
@@ -134,9 +136,23 @@ If none of these can be answered favorably, the right move is to let the idea go
 
 -----
 
+## 7a. First test results (what’s been run so far)
+
+The second open question above — *is there any task where arrangement-based memory measurably beats linear storage?* — now has a partial answer. It has been tested in simulation. The third question (does the packing math specifically transfer?) has **not** — see the limit note below.
+
+**What was run.** Two memory models were compared on identical tasks with identical retrieval budgets: a **linear** baseline (memory as a flat sequence, retrieved by scanning a bounded window) and an **arrangement** challenger (memory connected by relationship, retrieved by walking the structure). Both were measured on recall and on robustness to damage. A first simple version used random vectors; a more realistic version added clustered data, beam-search retrieval for both systems, and hub-targeted damage (destroying the most-connected nodes first — the worst case for arrangement memory).
+
+**What was found.** Arrangement beat linear at recall in both versions, with the advantage largest on structured data (nearly 3x on clean recall) and under moderate damage (roughly 2x), including the hub-targeted worst case. The advantage narrowed toward parity only under heavy damage (40%+ of memory destroyed). Full numbers are in `RESULTS.md`; the exact code is in this repository; the process is documented in `METHODOLOGY.md`.
+
+**How it was verified.** The seed is fixed, so each test has one deterministic answer. One early set of reported numbers could not be reconciled with that determinism and was discarded as not genuinely executed. The code was then run by two independent code-executing systems that could not see each other’s work; their outputs matched to the decimal on both versions. Only then were the results trusted. A confident-looking result is not the same as a real one — independent reproduction is what made these trustworthy.
+
+**The limit (important).** These tests used ordinary relationship-based arrangement — **not** the unit-distance packing geometry that is the load-bearing piece of this hypothesis (Section 2). So what is now supported is the narrow claim *“structured arrangement beats a linear list at recall and robustness,”* which is real but is essentially relational memory behaving well. It is **not** evidence that the new packing math specifically helps. That remains unproven and untested, and it is the next and harder question. This result clears the ground for that question by showing the underlying effect is real; it does not answer it.
+
+-----
+
 ## 8. Status and caution to myself
 
-- This is **shared openly as a working draft** and **in progress.** It’s a seed, put in the open so it stops living only in my head and one fragile conversation — and so people who know more than I do can find it, take what’s useful, or tell me where it’s wrong.
+- This is **shared openly as a working draft** and **in progress.** It’s a seed, put in the open so it stops living only in my head and one fragile conversation — and so people who know more than I do can find it, take what’s useful, or tell me where it’s wrong. **Update (May 2026): first tests have been run — see Section 7a. One open question is now partially answered; the load-bearing question remains open.**
 - I am **not claiming** I’ve discovered a new memory architecture. I noticed a connection between real pieces other people made, and I think it’s worth chasing. That’s all this is at this stage.
 - **Caution I’m setting for myself:** do not let this slide into mysticism or “the universe is a cellular automaton” territory. The person whose work sparked Piece A wraps it in that framing; I deliberately don’t. Keep this as a neutral engineering and math question — *can arrangement be a better substrate for memory* — and nothing more, until evidence says otherwise.
 - **The demotion caution (see Section 2):** the new math is the easiest thing to lose and the most important thing to keep. Watch for any version of “that’s already known” creeping in. The reaching is old; the math is new; the application is unbuilt.
