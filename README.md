@@ -6,6 +6,8 @@
 **Status:** Shared openly as a working draft. In progress — a starting point, not a finished idea.
 **Date started:** May 2026
 
+Companion document: https://github.com/JaronKBragg7337/emergence-structure-that-grows — the emergence principle that Section 2b draws on.
+
 -----
 
 ## A note before the idea
@@ -41,6 +43,20 @@ There is exactly **one** element here that is genuinely new and genuinely unbuil
 **Why this matters for every downstream use.** Anytime this idea becomes something else — an animation, a simulation, a post, a conversation — the test for whether the thing is *real* versus *decorative* is the same: **is the new packing geometry actually the foundation, or is it just decoration on top of an ordinary grid?** A cellular automaton that merely *looks* interesting is a used idea. A cellular automaton whose *arrangement is governed by the new packing geometry* is the unexplored thing. The math being the foundation — not the garnish — is what separates a genuine attempt from a pretty visualization.
 
 **One precision note on what the math is actually about (relational geometry, not density).** It is tempting to describe the goal as packing information “denser” — fitting more into less space. That is the wrong word, and the wrong target. The real result is about *unit-distance relationships*: arranging points so that more pairs sit in a meaningful relation to each other, achieved not by physical compression but by a cleverer underlying structure (the math replaced a simple grid with the symmetries of a deep algebraic number field). The transfer to memory should therefore be framed as **more meaningful neighbor-relationships per unit of structure** — relational geometry — not “more cells crammed into space.” This is the actual bridge, and it is a better fit for memory than density ever was, because what matters in memory is meaningful connection between pieces of information, not how tightly they are stored.
+
+-----
+
+## 2b. Why “emergent arrangement” isn’t an exotic ask
+
+One objection to this whole hypothesis is that “memory whose arrangement emerges from rules rather than being designed” sounds speculative on its face. It isn’t, and that’s worth establishing here, because it removes a barrier before the reader hits the open questions.
+
+In systems that are trained rather than hand-built, emergent internal structure is the **normal case, not the exception.** A few concrete, demonstrated instances from other systems (not my work — credited and detailed in the companion document, *Emergence: Structure That Grows Rather Than Gets Built*):
+
+- A transformer trained only on Othello move sequences built an internal representation of the game board it was never given — a *spatial* structure that emerged from data alone, and one you can causally intervene on. This is the closest cousin to what I’m proposing: a spatial arrangement that grows from the rules rather than being placed.
+- A model trained only to predict the next token in programs internally came to represent what those programs actually do.
+- The Anthropic emotion-concept finding that sparked my looking belongs here too: internal structure arising from training rather than being programmed.
+
+The point for *this* document is narrow and I want to keep it narrow: these establish that **functional structure can emerge from rules rather than being designed in** — which is the exact mechanism my hypothesis depends on. They do **not** prove that packing-geometry specifically makes memory better; that remains the open question in Section 7. What they do is move “could memory’s arrangement emerge rather than be hand-built?” from speculation to “this kind of emergence already happens, demonstrably, in related systems.” The load-bearing math (Section 2) is still the part that’s new and unproven. This section only clears the ground around it.
 
 -----
 
