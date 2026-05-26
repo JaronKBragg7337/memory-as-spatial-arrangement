@@ -8,7 +8,7 @@
 
 Companion document: <https://github.com/JaronKBragg7337/emergence-structure-that-grows> — the emergence principle that Section 2b draws on.
 
-First test results and runnable code: see METHODOLOGY.md, RESULTS.md, and the simulation files in this repository. Section 7a below summarizes what has now been tested.
+First test results and runnable code: see [METHODOLOGY.md](METHODOLOGY.md), [RESULTS.md](RESULTS.md), and the simulation files ([sim_linear_vs_arrangement.py](sim_linear_vs_arrangement.py), [sim_lesstoy.py](sim_lesstoy.py)) in this repository. Section 7a below summarizes what has now been tested.
 
 -----
 
